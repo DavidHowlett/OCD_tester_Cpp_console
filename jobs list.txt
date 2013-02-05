@@ -1,0 +1,25 @@
+
+
+- make code work with TSI
+
+
+
+
+wish list
+
+- start readings at fixed times not after a fixed 5 millisecond delay
+- more efficent creation of data points so that data is only created when 
+
+
+not happening at this point:
+
+- redesign so that a few data readings on either side of the trigger flow crossing are included in the intergration
+- make storeing the whole raw data optional, if raw data storage is turned off then only the readings since the most recient pulse would be stored im memory. Only data about pulses would be stored.
+- (processer) rewrite code so that it can handle data input with constant overhead, consider the compatiblity with a one way linked list
+	- 
+- add feature where if no pulses have been recorded for 30 seconds then the reading terminates
+- (memory) figure out how to store the data.
+	- very large raw data array
+	- dynamic memory allocation
+		- linked list 
+		- home made expanding array class

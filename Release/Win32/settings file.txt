@@ -1,0 +1,8 @@
+29		(integer)		The port on which the program most recently found a flowmeter
+5		(integer)		The length of time in ms between individual raw data readings 
+1		(integer)		The most recently used raw data file number 
+0		(integer)		The most recently used analysed data file number 
+2.000001	(floating point number)	The trigger flow rate. The flow rate in standard litres per minute at which the software recognises that a pulse of air has started 
+0.100000	(floating point number)	The antibounce wait time. The time in seconds wich the program waits after the trigger flow rate is crossed during which the program does not detect further crossings. This stops the program from seeing lots of pulses if there is noise on the signal. 
+0.300000	(floating point number) The length of time in seconds on each side of the main body of the pulse that is included for the purposes of integrating to find the volume in the pulse 
+1234567890	(integer)		Don't change this value, it's purpose is to test if the settings file has been read correctly 
